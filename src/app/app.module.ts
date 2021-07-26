@@ -13,7 +13,7 @@ import { UserpageComponent } from './userpage/userpage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
