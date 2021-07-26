@@ -9,7 +9,7 @@ import { UserpageComponent } from './userpage/userpage.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    
   ],
   imports: [
     BrowserModule,
