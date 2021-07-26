@@ -1,0 +1,1 @@
+      if (seconds < 29)
