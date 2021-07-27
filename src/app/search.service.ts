@@ -39,7 +39,7 @@ export class SearchService {
 
 }
 
-let searchUserUrl = 'https://api.github.com/users/'+username+'?access_token='+environment.Apikey ;
+let searchUserUrl = 'https://api.github.com/users/'+username+'?access_token=' ;
 // let searchUserUrl='https://api.github.com/users/'+username+'?client_id='+environment.CLIENTID ;
 
   
@@ -75,9 +75,8 @@ getRepos(username:string){
   }
 
 
-  let RepoUrl='https://api.github.com/users/'+username+'/repos?order=created&sort=asc?access_token='+environment.Apikey ;
-  // let RepoUrl='https://api.github.com/users/'+username+'/repos?order=created&sort=asc?client_id='+environment.CLIENTID ;
-  // let RepoUrl='https://api.github.com/users/'+username+'/repos' ;
+  let RepoUrl='https://api.github.com/users/'+username+'/repos?order=created&sort=asc?access_token=';
+;
 
   let promise = new Promise<void>((resolve,reject) =>{
     this.http.get<ApiResponse>(RepoUrl).toPromise().then
