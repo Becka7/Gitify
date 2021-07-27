@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  Apikey:"  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",
+  Apikey:"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",
   
 };
 
